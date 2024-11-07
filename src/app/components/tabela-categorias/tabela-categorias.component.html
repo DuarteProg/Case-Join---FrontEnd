@@ -1,0 +1,19 @@
+<div class="card">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let category of categories">
+          <th scope="row">{{ category.id }}</th>
+          <td>{{ category.nome }}</td>
+          <td>{{ category.descricao }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
